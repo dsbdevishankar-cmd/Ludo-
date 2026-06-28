@@ -1,0 +1,6 @@
+{
+  "name": "Ludo Arena",
+  "description": "Feature-rich Ludo application with customizable themes, simulated real-time multiplayer, voice chat visualizers, player stats, and local pass-and-play.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
