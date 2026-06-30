@@ -421,6 +421,29 @@ fun MainScreen(
 
                 if (matchmaking is GameViewModel.MatchmakingState.Idle) {
                     
+                    // ONLINE MULTIPLAYER SECTION HEADER
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 12.dp, bottom = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Share,
+                            contentDescription = "Online Mode",
+                            tint = BentoPrimary,
+                            modifier = Modifier.size(20.dp)
+                        )
+                        Text(
+                            text = "ONLINE MULTIPLAYER / ऑनलाइन मोड",
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = BentoPrimary,
+                            letterSpacing = 1.sp
+                        )
+                    }
+
                     // 5. PRIMARY PLAY CARD: MULTIPLAYER LOBBY
                     Box(
                         modifier = Modifier
@@ -528,6 +551,29 @@ fun MainScreen(
                                 }
                             }
                         }
+                    }
+
+                    // OFFLINE MODES SECTION HEADER
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 16.dp, bottom = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Home,
+                            contentDescription = "Offline Mode",
+                            tint = BentoPinkText,
+                            modifier = Modifier.size(20.dp)
+                        )
+                        Text(
+                            text = "OFFLINE PLAY MODES / ऑफलाइन मोड",
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = BentoPinkText,
+                            letterSpacing = 1.sp
+                        )
                     }
 
                     // 6. TWO-COLUMN BENTO WIDGETS (Practice vs Bots & Local Match)
